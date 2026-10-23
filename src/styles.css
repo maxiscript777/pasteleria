@@ -1,0 +1,130 @@
+/* Propuesta de diseno visual (Forma C: Pasteleria Mil Sabores)
+   Fondo: crema pastel #FFF5E1 | Acentos: rosa suave #FFC0CB y chocolate #8B4513
+   Texto principal: marron oscuro #5D4037 | Texto secundario: gris claro #B0BEC5
+   Fuente general: Lato | Fuente de encabezados: Pacifico */
+
+:root {
+  --crema: #fff5e1;
+  --rosa: #ffc0cb;
+  --chocolate: #8b4513;
+  --texto: #5d4037;
+  --texto-secundario: #b0bec5;
+
+  --bs-body-bg: var(--crema);
+  --bs-body-color: var(--texto);
+  --bs-body-font-family: 'Lato', sans-serif;
+  --bs-link-color: var(--chocolate);
+  --bs-link-hover-color: #5d2f0d;
+  --bs-link-color-rgb: 139, 69, 19;
+  --bs-link-hover-color-rgb: 93, 47, 13;
+  --bs-primary: var(--chocolate);
+  --bs-primary-rgb: 139, 69, 19;
+}
+
+body {
+  background-color: var(--crema);
+  color: var(--texto);
+  font-family: 'Lato', sans-serif;
+}
+
+/* Titulos con la fuente cursiva */
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3,
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
+
+/* Textos secundarios y descripciones */
+.text-muted,
+.text-secondary,
+.form-text {
+  color: var(--texto-secundario) !important;
+}
+
+/* Barra de navegacion */
+.navbar.bg-dark {
+  background-color: var(--chocolate) !important;
+}
+
+.brand-logo {
+  height: 44px;
+  width: auto;
+  background-color: var(--crema);
+  border-radius: 8px;
+  padding: 2px 4px;
+}
+
+/* Botones: chocolate (principal) y rosa suave (confirmar / comprar) */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--chocolate);
+  --bs-btn-border-color: var(--chocolate);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6f370f;
+  --bs-btn-hover-border-color: #6f370f;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #5d2f0d;
+  --bs-btn-active-border-color: #5d2f0d;
+  --bs-btn-disabled-bg: var(--chocolate);
+  --bs-btn-disabled-border-color: var(--chocolate);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--chocolate);
+  --bs-btn-border-color: var(--chocolate);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--chocolate);
+  --bs-btn-hover-border-color: var(--chocolate);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--chocolate);
+  --bs-btn-active-border-color: var(--chocolate);
+  --bs-btn-disabled-color: var(--chocolate);
+  --bs-btn-disabled-border-color: var(--chocolate);
+}
+
+.btn-success {
+  --bs-btn-color: var(--texto);
+  --bs-btn-bg: var(--rosa);
+  --bs-btn-border-color: var(--rosa);
+  --bs-btn-hover-color: var(--texto);
+  --bs-btn-hover-bg: #ffa9ba;
+  --bs-btn-hover-border-color: #ffa9ba;
+  --bs-btn-active-color: var(--texto);
+  --bs-btn-active-bg: #ff95aa;
+  --bs-btn-active-border-color: #ff95aa;
+  --bs-btn-disabled-color: var(--texto);
+  --bs-btn-disabled-bg: var(--rosa);
+  --bs-btn-disabled-border-color: var(--rosa);
+}
+
+.bg-primary {
+  background-color: var(--chocolate) !important;
+}
+
+/* Tarjetas con borde suave */
+.card {
+  border-color: rgba(139, 69, 19, 0.15);
+}
+
+.product-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+.cart-image {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+}
